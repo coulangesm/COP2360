@@ -1,0 +1,15 @@
+C:\Users\Test\Desktop\COP2360\Module3\bin\Debug\net9.0\Module3.exe
+C:\Users\Test\Desktop\COP2360\Module3\bin\Debug\net9.0\Module3.deps.json
+C:\Users\Test\Desktop\COP2360\Module3\bin\Debug\net9.0\Module3.runtimeconfig.json
+C:\Users\Test\Desktop\COP2360\Module3\bin\Debug\net9.0\Module3.dll
+C:\Users\Test\Desktop\COP2360\Module3\bin\Debug\net9.0\Module3.pdb
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.AssemblyInfoInputs.cache
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.AssemblyInfo.cs
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.sourcelink.json
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.dll
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\refint\Module3.dll
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.pdb
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\Module3.genruntimeconfig.cache
+C:\Users\Test\Desktop\COP2360\Module3\obj\Debug\net9.0\ref\Module3.dll

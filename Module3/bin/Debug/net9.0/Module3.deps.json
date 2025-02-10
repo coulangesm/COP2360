@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "GamingApp/1.0.0": {
+      "Module3/1.0.0": {
         "runtime": {
-          "GamingApp.dll": {}
+          "Module3.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "GamingApp/1.0.0": {
+    "Module3/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

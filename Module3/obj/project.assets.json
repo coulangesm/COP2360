@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Test\\Desktop\\COP2360\\Module3\\GamingApp\\GamingApp.csproj",
-      "projectName": "GamingApp",
-      "projectPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module3\\GamingApp\\GamingApp.csproj",
+      "projectUniqueName": "C:\\Users\\Test\\Desktop\\COP2360\\Module3\\Module3.csproj",
+      "projectName": "Module3",
+      "projectPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module3\\Module3.csproj",
       "packagesPath": "C:\\Users\\Test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module3\\GamingApp\\obj\\",
+      "outputPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Test\\AppData\\Roaming\\NuGet\\NuGet.Config"
