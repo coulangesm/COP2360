@@ -1,66 +1,57 @@
 ﻿using System;
 
-public class Student
+// Base class
+public class Asset
 {
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public string Major { get; set; }
-    public List<string> Courses { get; set; }
+    public string Name = "";
 
-    // Parameterless constructor
-    public Student()
+    // Describe a generic asset
+    public virtual void Describe()
     {
-        Name = "Unknown";
-        Age = 18;
-        Major = "Undeclared";
-        Courses = new List<string>();
-    }
-
-    // Parameterized constructor
-    public Student(string name, int age, string major)
-    {
-        Name = name;
-        Age = age;
-        Major = major;
-        Courses = new List<string>();
-    }
-
-    // Display student details
-    public void DisplayDetails()
-    {
-        Console.WriteLine($"\n{nameof(Name)}: {Name}");
-        Console.WriteLine($"{nameof(Age)}: {Age}");
-        Console.WriteLine($"{nameof(Major)}: {Major}");
-        DisplayCourses();
-    }
-
-    // Display courses
-    public void DisplayCourses()
-    {
-        Console.WriteLine("Courses:");
-        foreach (var course in Courses)
-        {
-            Console.WriteLine($"- {course}");
-        }
+        Console.WriteLine($"[Asset] Name: {Name}");
     }
 }
 
-class Program
+// Derived class
+public class Stock : Asset
 {
-    static void Main()
-    {
-        // Using parameterized constructor
-        Student student1 = new Student("Thomas", 22, "Computer Science");
-        student1.Courses.Add("Introduction to Programming");
-        student1.Courses.Add("Data Structures and Algorithms");
-        student1.Courses.Add("Database Systems");
-        student1.DisplayDetails();
+    public long SharesOwned;
 
-        // Using object initializer
-        Student student2 = new Student { Name = "Mabel", Age = 20, Major = "Mathematics" };
-        student2.Courses.Add("Calculus I");
-        student2.Courses.Add("Linear Algebra");
-        student2.Courses.Add("Probability and Statistics");
-        student2.DisplayDetails();
+    // Overridden stock asset
+    public override void Describe()
+    {
+        Console.WriteLine($"[Stock] Name: {Name}, Shares Owned: {SharesOwned}");
+    }
+}
+
+// Derived class
+public class House : Asset
+{
+    public decimal Mortgage;
+
+    // Overridden house asset
+    public override void Describe()
+    {
+        Console.WriteLine($"[House] Name: {Name}, Mortgage: {Mortgage}");
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        // Creating an instance of a generic asset
+        Asset genericAsset = new Asset { Name = "Generic Asset" };
+
+        // Creating an instance of a stock asset
+        Stock apple = new Stock { Name = "Apple", SharesOwned = 1000 };
+
+        // Creating an instance of a house asset
+        House mansion = new House { Name = "Beverly Mansion", Mortgage = 500_000m };
+
+        // Describing each asset
+        genericAsset.Describe();
+        apple.Describe();
+        mansion.Describe();
     }
 }
