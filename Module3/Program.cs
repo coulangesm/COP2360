@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 public class Student
 {
@@ -26,14 +25,16 @@ public class Student
         Courses = new List<string>();
     }
 
-    // Method to display student details
+    // Display student details
     public void DisplayDetails()
     {
-        Console.WriteLine($"{nameof(Name)}: {Name}, {nameof(Age)}: {Age}, {nameof(Major)}: {Major}");
+        Console.WriteLine($"\n{nameof(Name)}: {Name}");
+        Console.WriteLine($"{nameof(Age)}: {Age}");
+        Console.WriteLine($"{nameof(Major)}: {Major}");
         DisplayCourses();
     }
 
-    // Method to display courses
+    // Display courses
     public void DisplayCourses()
     {
         Console.WriteLine("Courses:");
@@ -48,26 +49,18 @@ class Program
 {
     static void Main()
     {
-        // Using parameterless constructor
-        Student student1 = new Student();
+        // Using parameterized constructor
+        Student student1 = new Student("Thomas", 22, "Computer Science");
+        student1.Courses.Add("Introduction to Programming");
+        student1.Courses.Add("Data Structures and Algorithms");
+        student1.Courses.Add("Database Systems");
         student1.DisplayDetails();
 
-        // Using parameterized constructor
-        Student student2 = new Student("Alice", 20, "Computer Science");
-        student2.Courses.Add("ELO1000 - Succeeding Online");
-        student2.Courses.Add("Passport to Canvas for Students");
-        student2.Courses.Add("Live Online - College Algebra (AA) (2025 Spring 12 Weeks - MAC1105-26)");
-        student2.Courses.Add("Online - C# Programming (AA) (2025 Spring Full Term - COP2360-4)");
-        student2.Courses.Add("Online - Elements of Nutrition (AA) (2025 Spring 12 Weeks - HUN1201-8)");
-        student2.DisplayDetails();
-
         // Using object initializer
-        Student student3 = new Student { Name = "Bob", Age = 22, Major = "Mathematics" };
-        student3.Courses.Add("ELO1000 - Succeeding Online");
-        student3.Courses.Add("Passport to Canvas for Students");
-        student3.Courses.Add("Live Online - College Algebra (AA) (2025 Spring 12 Weeks - MAC1105-26)");
-        student3.Courses.Add("Online - C# Programming (AA) (2025 Spring Full Term - COP2360-4)");
-        student3.Courses.Add("Online - Elements of Nutrition (AA) (2025 Spring 12 Weeks - HUN1201-8)");
-        student3.DisplayDetails();
+        Student student2 = new Student { Name = "Mabel", Age = 20, Major = "Mathematics" };
+        student2.Courses.Add("Calculus I");
+        student2.Courses.Add("Linear Algebra");
+        student2.Courses.Add("Probability and Statistics");
+        student2.DisplayDetails();
     }
 }
