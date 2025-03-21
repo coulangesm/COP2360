@@ -75,11 +75,9 @@ class Program
         movies.Clear();
 
         // Add movies with their actors
-        movies["Spider-Man: No Way Home"] = new List<string> { "Tom Holland", "Zendaya" };
-        movies["Avengers: Endgame"] = new List<string> { "Robert Downey Jr.", "Chris Evans", "Scarlett Johansson", "Chris Hemsworth" };
-        movies["The Batman"] = new List<string> { "Robert Pattinson", "Zoë Kravitz", "Paul Dano" };
-        movies["Top Gun: Maverick"] = new List<string> { "Tom Cruise", "Miles Teller", "Jennifer Connelly" };
-        movies["Barbie"] = new List<string> { "Margot Robbie", "Ryan Gosling", "America Ferrera" };
+        movies["Spider-Man: No Way Home"] = new List<string> { "Tom Holland", "Zendaya." };
+        movies["Top Gun: Maverick"] = new List<string> { "Tom Cruise", "Miles Teller", "Jennifer Connelly." };
+        movies["Barbie"] = new List<string> { "Margot Robbie", "Ryan Gosling", "America Ferrera." };
         movies["Oppenheimer"] = new List<string> { "Cillian Murphy", "Emily Blunt", "Robert Downey Jr." };
 
         Console.WriteLine("Movies added successfully.");
@@ -98,11 +96,8 @@ class Program
         foreach (var movie in movies)
         {
             Console.WriteLine($"\nMovie: {movie.Key}");
-            Console.WriteLine("Starring:");
-            foreach (string actor in movie.Value)
-            {
-                Console.WriteLine($"  • {actor}");
-            }
+            Console.Write("Starring: ");
+            Console.WriteLine(string.Join(", ", movie.Value));
         }
     }
 
@@ -201,10 +196,7 @@ class Program
 
         // Display current actors in the movie
         Console.WriteLine($"\nCurrent actors in '{movieToUpdate}':");
-        foreach (string actor in movies[movieToUpdate])
-        {
-            Console.WriteLine($"  • {actor}");
-        }
+        Console.WriteLine(string.Join(", ", movies[movieToUpdate]));
 
         Console.Write("\nEnter the name of the actor to add: ");
         string newActor = Console.ReadLine().Trim();
@@ -230,7 +222,7 @@ class Program
             return;
         }
 
-        Console.WriteLine("\n===== MOVIES (SORTED) =====");
+        Console.WriteLine("\n++++ Movies sorted ++++");
         List<string> sortedTitles = new List<string>(movies.Keys);
         sortedTitles.Sort(); // Sort the movie titles alphabetically
 
@@ -238,11 +230,8 @@ class Program
         foreach (string title in sortedTitles)
         {
             Console.WriteLine($"\nMovie: {title}");
-            Console.WriteLine("Starring:");
-            foreach (string actor in movies[title])
-            {
-                Console.WriteLine($"  • {actor}");
-            }
+            Console.Write("Starring: ");
+            Console.WriteLine(string.Join(", ", movies[title]));
         }
     }
 }
