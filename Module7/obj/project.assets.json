@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Test\\Desktop\\COP2360\\Module4\\Module4.csproj",
-      "projectName": "Module4",
-      "projectPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module4\\Module4.csproj",
+      "projectUniqueName": "C:\\Users\\Test\\Desktop\\COP2360\\Module7\\Module7.csproj",
+      "projectName": "Module7",
+      "projectPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module7\\Module7.csproj",
       "packagesPath": "C:\\Users\\Test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module4\\obj\\",
+      "outputPath": "C:\\Users\\Test\\Desktop\\COP2360\\Module7\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Test\\AppData\\Roaming\\NuGet\\NuGet.Config"

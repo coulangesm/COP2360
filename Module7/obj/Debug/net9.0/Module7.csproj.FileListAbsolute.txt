@@ -1,0 +1,15 @@
+C:\Users\Test\Desktop\COP2360\Module7\bin\Debug\net9.0\Module7.exe
+C:\Users\Test\Desktop\COP2360\Module7\bin\Debug\net9.0\Module7.deps.json
+C:\Users\Test\Desktop\COP2360\Module7\bin\Debug\net9.0\Module7.runtimeconfig.json
+C:\Users\Test\Desktop\COP2360\Module7\bin\Debug\net9.0\Module7.dll
+C:\Users\Test\Desktop\COP2360\Module7\bin\Debug\net9.0\Module7.pdb
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.AssemblyInfoInputs.cache
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.AssemblyInfo.cs
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.sourcelink.json
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.dll
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\refint\Module7.dll
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.pdb
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\Module7.genruntimeconfig.cache
+C:\Users\Test\Desktop\COP2360\Module7\obj\Debug\net9.0\ref\Module7.dll
