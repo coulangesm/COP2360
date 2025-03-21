@@ -224,7 +224,8 @@ class Program
 
         Console.WriteLine("\n++++ Movies sorted ++++");
         List<string> sortedTitles = new List<string>(movies.Keys);
-        sortedTitles.Sort(); // Sort the movie titles alphabetically
+        // Sort the movie titles alphabetically
+        sortedTitles.Sort(); 
 
         // Display sorted movies and their actors
         foreach (string title in sortedTitles)
