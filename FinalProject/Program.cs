@@ -2,16 +2,20 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
+// This program is a simple console application that manages subcontractor information and
+// calculates their pay based on hours worked.
 class Program
 {
     static void Main(string[] args)
     {
         Console.WriteLine("--- Subcontractor Management ---");
 
+        // Create a list to store subcontractors
         List<Subcontractor> subcontractors = new List<Subcontractor>();
 
         bool addMore = true;
 
+        // Loop to add subcontractors until the user decides to stop
         while (addMore)
         {
             Console.WriteLine("\nEnter details for a new subcontractor:");
@@ -22,6 +26,7 @@ class Program
             int shift = GetShiftInput("Enter Shift (1 for Day, 2 for Night): ");
             double hourlyRate = GetDoubleInput("Enter Hourly Pay Rate: ");
 
+            // Create a new Subcontractor object and add it to the list
             try
             {
                 Subcontractor newSub = new Subcontractor(name, number, startDate, shift, hourlyRate);
@@ -33,7 +38,7 @@ class Program
                 Console.WriteLine($"Error creating subcontractor: {ex.Message}");
             }
 
-
+            // Ask if the user wants to add another subcontractor
             Console.Write("\nAdd another subcontractor? (y/n): ");
             string response = Console.ReadLine()?.Trim().ToLower() ?? string.Empty;
             addMore = (response == "y" || response == "yes");
@@ -47,6 +52,7 @@ class Program
         }
         else
         {
+            // Display the details of each subcontractor
             foreach (var sub in subcontractors)
             {
                 Console.WriteLine("-----------------------------------");
@@ -60,11 +66,11 @@ class Program
             }
         }
 
-
         Console.WriteLine("\nPress any key to exit.");
         Console.ReadKey();
     }
 
+    // Helper methods to get user input
     static string GetStringInput(string prompt)
     {
         string input;
@@ -80,6 +86,7 @@ class Program
         return input;
     }
 
+    // Method to get a date input from the user
     static DateTime GetDateInput(string prompt)
     {
         DateTime dateValue;
@@ -99,7 +106,8 @@ class Program
         }
     }
 
-     static int GetShiftInput(string prompt)
+    // Method to get a shift input from the user
+    static int GetShiftInput(string prompt)
     {
         int shiftValue;
         string input;
@@ -107,9 +115,13 @@ class Program
         {
             Console.Write(prompt);
             input = Console.ReadLine() ?? string.Empty;
-            if (int.TryParse(input, out shiftValue) && (shiftValue == Subcontractor.DAY_SHIFT || shiftValue == Subcontractor.NIGHT_SHIFT) )
+            if (
+                int.TryParse(input, out shiftValue) &&
+                (shiftValue == Subcontractor.DAY_SHIFT ||
+                shiftValue == Subcontractor.NIGHT_SHIFT)
+                )
             {
-                 return shiftValue;
+                return shiftValue;
             }
             else
             {
@@ -118,6 +130,7 @@ class Program
         }
     }
 
+    // Method to get a double input from the user
     static double GetDoubleInput(string prompt)
     {
         double value;
