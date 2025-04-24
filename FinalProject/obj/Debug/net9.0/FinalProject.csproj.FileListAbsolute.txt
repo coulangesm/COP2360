@@ -1,0 +1,15 @@
+C:\Users\Test\Desktop\COP2360\FinalProject\bin\Debug\net9.0\FinalProject.exe
+C:\Users\Test\Desktop\COP2360\FinalProject\bin\Debug\net9.0\FinalProject.deps.json
+C:\Users\Test\Desktop\COP2360\FinalProject\bin\Debug\net9.0\FinalProject.runtimeconfig.json
+C:\Users\Test\Desktop\COP2360\FinalProject\bin\Debug\net9.0\FinalProject.dll
+C:\Users\Test\Desktop\COP2360\FinalProject\bin\Debug\net9.0\FinalProject.pdb
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.AssemblyInfoInputs.cache
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.AssemblyInfo.cs
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.sourcelink.json
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.dll
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\refint\FinalProject.dll
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.pdb
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\FinalProject.genruntimeconfig.cache
+C:\Users\Test\Desktop\COP2360\FinalProject\obj\Debug\net9.0\ref\FinalProject.dll
